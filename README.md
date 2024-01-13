@@ -4,8 +4,8 @@
 
   ### Sample Image
 
-  <img alt="Sample Image" src="https://github.com/saurowankhade/NatureLove/assets/98818353/d65aff00-3a41-44d9-9d86-0453fa0e3d08
-">
+ ![image](https://github.com/saurowankhade/NatureLove/assets/98818353/28a143eb-bc5b-415c-9db2-921ce55b6752)
+
 
  ## Getting Started 
  To get the webpage working, just clone the project and edit all text as per your need.You can change images stylesheets as well.
