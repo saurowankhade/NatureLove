@@ -1,0 +1,161 @@
+header{
+    background-image: url(imgs/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+
+}
+
+.sogan h3{
+    margin-top: 10px;
+}
+.user_sogan{
+    display: inline-flex;
+    gap: 10px;
+}
+.user_sogan img{
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main{
+    display: flex;
+    padding: 0px 100px 10px 100px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.address{
+    text-align: left;
+}
+.address h1{
+    color: rgb(10, 150, 10);
+}
+.address h1,h4{
+    text-align: left;
+    margin-top: 10px;
+}
+.address h2{
+    color: rgba(0, 128, 0, 0.792);
+}
+
+.address h2,h4{
+    font-size: 18px;
+}
+.address h4{
+    margin-bottom: 30px;
+    color: rgba(49, 146, 49, 0.671);
+}
+
+.social{
+    display: inline-flex;
+    gap: 30px;
+    text-align: center;
+}
+.media{
+    background-color: rgb(170, 188, 162);
+    border-radius: 50%;
+}
+.media i{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.media:hover{
+    background-color: rgb(60, 153, 23);
+}
+
+.form{
+    text-align: center;
+    padding-left: 200px;
+}
+
+form{
+    display: inline-block;
+    width: 500px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+form button{
+    padding: 10px;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 128, 0, 0.416);
+    background-color: rgba(0, 128, 0, 0.416);
+    color: white;
+    cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button:hover{
+    border: 1px solid rgba(0, 128, 0, 0.943);
+    background-color: rgba(0, 128, 0, 0.943);
+}
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .user_sogan{
+        display: block;
+    }
+    .data{
+        display: none;
+    }
+
+    .main{
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    .address,.address h4,.address h1{
+        text-align: center;
+    }
+
+    .social{
+        gap: 10px;
+    }
+
+    .media i{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form{
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 90px;
+    }
+    form{
+        width: 100%;
+    }
+
+    .user_sogan img{
+        width: 50%;
+    }
+    
+}
