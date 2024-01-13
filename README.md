@@ -4,7 +4,7 @@
 
   ### Sample Image
 
-  <Video alt="Sample Image" src="![image](https://github.com/saurowankhade/NatureLove/assets/98818353/d65aff00-3a41-44d9-9d86-0453fa0e3d08)
+  <img alt="Sample Image" src="https://github.com/saurowankhade/NatureLove/assets/98818353/d65aff00-3a41-44d9-9d86-0453fa0e3d08
 ">
 
  ## Getting Started 
