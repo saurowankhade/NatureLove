@@ -4,7 +4,7 @@
 
   ### Sample Image
 
-  <img alt="Sample Image" src="https://github.com/saurowankhade/NatureLove/assets/98818353/5878a5b4-f3f9-4ed2-b3c3-624206a20400">
+  <img alt="Sample Image" src="https://im2.ezgif.com/tmp/ezgif-2-298379a583.gif">
 
  ## Getting Started 
  To get the webpage working, just clone the project and edit all text as per your need.You can change images stylesheets as well.
