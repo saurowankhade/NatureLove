@@ -16,8 +16,9 @@
 Project is open for contribution
 
 ## Credits
-+ _[Poppins Font](https://fonts.google.com/specimen/Poppins)_ from Google Fonts
++ _[Noto Sans Font](https://fonts.google.com/specimen/Noto+Sans)_ from Google Fonts
 + _[FontAwesome](https://fontawesome.com/)_ for all icons
++ _[Animation] (https://github.com/michalsnik/aos)_ On Scroll Animation
 
 ## Demo 
 
