@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>    
     <header>
-        <div>
+        <div class="fornt">
             <nav>
                 <img src="imgs/icon.png" alt="Logo" width="100"
                 height="90">
@@ -33,39 +36,41 @@
             <div class="header_data">
                 <div class="data">
                     <h1>We all love</h1>
-                    <h1>nature</h1>
+                    <h1>Nature</h1>
                     <p class="p">Look deep into nature, and you will</p>
                     <p class="ele_last p">understand everything better</p>
                 </div>
-                        
+            </div>
 
-        </div>
+            </div>
+
+
         
     </header>
 
 
     <main>
 
-        <div class="main_services">
+        <div class="main_services" data-aos="fade-up">
             <span><h2>Our Services</h2></span>
 
             <div class="service_data">
                 
-                <div class="card">
+                <div class="card" >
                     <img src="imgs/service-1.jpg" alt="Services 1">
                     <figcaption>
                         <h2>Name</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto facere in, praesentium suscipit minus voluptatem architecto, voluptatibus dolores magni iste dignissimos numquam quas eius ea sint dolorem excepturi! In, cupiditate.</p>
                     </figcaption>
                 </div>
-                <div class="card">
+                <div class="card" >
                     <img src="imgs/service-2.jpg" alt="Services 2">
                     <figcaption>
                         <h2>Name</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto facere in, praesentium suscipit minus voluptatem architecto, voluptatibus dolores magni iste dignissimos numquam quas eius ea sint dolorem excepturi! In, cupiditate.</p>
                     </figcaption>
                 </div>
-                <div class="card">
+                <div class="card" >
                     <img src="imgs/service-3.jpg" alt="Services 3">
                     <figcaption>
                         <h2>Name</h2>
@@ -98,7 +103,7 @@
 
         <div class="about">
            
-            <div>
+            <div data-aos="fade-left">
 
             
             <h5>ABOUT US</h5>
@@ -107,7 +112,7 @@
             <p>Because when a visitor first lands on your website, you&apos;re a stranger to them. They have to get to know you in order to want to read your blog posts, subscribe to your email newsletter, or buy what you&apos;re selling.</p>
         </div>
 
-        <img src="imgs/left.jpg" alt="AboutImg">
+        <img data-aos="fade-right" src="imgs/left.jpg" alt="AboutImg">
 
 
         </div>
@@ -125,21 +130,18 @@
 
 
     <footer>
-        <!-- <img src="imgs/icon.png" alt="Logo" width="100"
-            height="90">        
-                <ul>
-                    <li class="nav_home"><a href="">Home</a></li>
-                    <li class="nav_about"><a href="">About</a></li>
-                    <li class="nav_services"><a href="">Services</a></li>
-                    <li class="nav_services"><a href="">Blog</a></li>
-                    <li class="nav_contact"><a href="">Contact</a></li>
-                </ul> -->
-
-                <p>&copy;Saurabh Wankhade</p>
-                
-              
-           
+        <p>&copy;Saurabh Wankhade</p>   
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, 
+      });
+    </script>
 
 </body>
 </html>

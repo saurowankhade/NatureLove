@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Text and Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh; /* Ensure the body takes up the full viewport height */
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+    }
+
+    .main {
+      height: 100%; /* Fill the entire viewport height */
+      display: flex;
+      flex-direction: column;
+      background-color: aqua;
+      height: 500px;
+    }
+
+    .navigation {
+      /* Styles for navigation div */
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    .centered-text {
+      /* Styles for the centered text div */
+      flex: 1; /* Takes up remaining vertical space */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="navigation">
+      <!-- Navigation content goes here -->
+      Navigation
+    </div>
+    <div class="centered-text">
+      <!-- Your centered text content goes here -->
+      Hello, I'm centered!
+    </div>
+  </div>
+
+</body>
+</html>

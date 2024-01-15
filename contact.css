@@ -1,4 +1,4 @@
-header{
+.fornt{
     background-image: url(imgs/contactbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,9 +123,7 @@ form button:hover{
     .user_sogan{
         display: block;
     }
-    .data{
-        display: none;
-    }
+    
 
     .main{
         display: block;

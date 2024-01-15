@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Poppins&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 
 :root{
     --shadow: 100px 100px 100px  rgba(0, 128, 0, 0.142);
     --color: rgba(0, 128, 0, 0.521);
 }
+
 
 
 *{
@@ -12,15 +13,24 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins' ,sans-serif; 
+    font-family: 'Noto Sans', sans-serif;
 }
-header{
-    background-image: url(imgs/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-    object-fit: contain;
-    background-position:center center;
+html{
+    scroll-behavior: smooth;
+}
+
+.fornt{
+   display: flex;
+      flex-direction: column;
+      background-image: url(imgs/background1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      object-fit: contain;
+      background-position:center center;
+}
+nav{
+    background-color: #0c1c017a;
 }
 
 nav img{
@@ -36,7 +46,7 @@ nav ul{
     padding: 20px;
 }
 nav ul li a{
-    color: rgba(0, 128, 0, 0.605);
+    color: wheat;
     text-decoration: none;
     padding: 10px;
 }
@@ -49,7 +59,7 @@ nav ul li{
 
 nav ul li:last-child{
     border: 1px solid rgba(0, 128, 0, 0.416);
-    color: rgba(0, 128, 0, 0.416);
+    color: wheat;
     border-radius: 10%;
 }
 
@@ -74,22 +84,31 @@ nav ul li a:hover,nav ul li a:focus{
 }
 
 .header_data{
-    margin-top: 250px;
     font-size: 22px;
+    flex: 1; /* Takes up remaining vertical space */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    
 }
 
-.p{
-    text-align: center;
-    color: rgb(218, 235, 202);
+.header_data{
+    background-color: #0c1c015f;
 }
 
-.header_data h1,p{
-    text-align: center;
-    color: rgb(218, 235, 202);
+.header_data .data h1{
+    font-size: 60px;
+}
+.header_data .data p{
+    font-size: 24px;
+}
+.header_data h1, .header_data p{
+    color: wheat;
 }
 
 .ele_last{
-    padding-bottom: 20px;
+   text-align: center;
 }
 
 .main_services span h2{
@@ -108,18 +127,30 @@ nav ul li a:hover,nav ul li a:focus{
     padding: 0px 200px 0px 200px;
 }
 .card{
-    margin-left: 10px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.034);   
+    color: red;
 }
+
 .card p{
-    color: black;
+    color: rgba(0, 0, 0, 0.813);
     text-align: justify;
     padding: 10px;
+    line-height: 1.7rem;
+
 }
 
 .card h2{
     margin: 10px;
+    color: rgba(0, 0, 0, 0.847);
 }
 
+.card:hover  {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.091);
+    
+}
 
 .sogan{
     background-color: #5369420c;
@@ -139,6 +170,7 @@ nav ul li a:hover,nav ul li a:focus{
     padding: 0px 200px 0px 200px;
     font-size: 30px;
     margin: 0 200px 0 200px;
+    line-height: 3rem;
 }
 .sogan img{
     margin-top: 40px;
@@ -167,6 +199,8 @@ nav ul li a:hover,nav ul li a:focus{
 .about div h5,h3,p{
     text-align: justify;
     padding: 0 80px 0 100px;
+    
+    line-height: 1.9rem;
 }
 
 .about div h3,p{
@@ -212,13 +246,13 @@ nav ul li a:hover,nav ul li a:focus{
     margin-top: 60px;
     margin-bottom: 100px;
     color: wheat;
-    background-color: #536942;
+    background-color: #536942c5;
     cursor: pointer;
 }
 
 .question span:hover{
     color: wheat;
-    background-color: #53694279;
+    background-color: #536942;
     border: #53694279;
     cursor: pointer;
     border-radius: 20px;
@@ -239,19 +273,13 @@ nav ul li a:hover,nav ul li a:focus{
 
 
 @media (max-width: 1000px) {
-    header{
-        margin-top: -250px;
+    
+    
+    .header_data .data h1{
+        font-size: 40px;
     }
-    .data{
-       display: inline-block;
-       float: right; 
-       margin-top: 200px;
-    }
-    .data h1{
-        color: #ffffff;
-    }
-    .data p{
-        color: white;
+    .header_data .data p{
+        font-size: 20px;
     }
     
     .checkbox i{
@@ -312,8 +340,13 @@ nav ul li a:hover,nav ul li a:focus{
         width: 80%;
     }
     .card{
-        margin: 0;
-        padding: 3px;
+        margin: 10px 8px 0 8px;
+        /* padding: 2px; */
+
+    }
+    .card img{
+        width: 90%;
+        margin-top: 10px;
     }
     .card p{
         margin-bottom: 20px;

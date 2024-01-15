@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>    
     <header>
-        <div>
+        <div class="fornt">
             <nav>
                 <img src="imgs/icon.png" alt="Logo" width="100"
                 height="90">
@@ -48,7 +51,7 @@
 
 
         <div class="main">
-            <div class="address">
+            <div class="address" data-aos="fade-right">
                 <h1>You can find us at</h1>
                 <span>
                     <h2>EMAIL</h2>
@@ -82,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form">
+            <div class="form" data-aos="fade-left">
                 <h1>Let`s get in touch</h1>
                 <form action="" method="post">
                     <input type="text" placeholder="Your Name">
@@ -101,10 +104,10 @@
             <br><br>
             <h3>We are optimists who love to work together</h3>
             <div class="user_sogan">
-                <img src="imgs/avatar_1.jpg" alt="user_img"/>
-                <img src="imgs/avatar_2.jpg" alt="user_img"/>
-                <img src="imgs/avatar_3.jpg" alt="user_img"/>
-                <img src="imgs/avatar_4.jpg" alt="user_img"/>
+                <img data-aos="fade-right" src="imgs/avatar_1.jpg" alt="user_img"/>
+                <img data-aos="fade-left" src="imgs/avatar_2.jpg" alt="user_img"/>
+                <img data-aos="fade-right" src="imgs/avatar_3.jpg" alt="user_img"/>
+                <img data-aos="fade-left" src="imgs/avatar_4.jpg" alt="user_img"/>
             </div>
 
 
@@ -121,6 +124,16 @@
     <footer>
         <p>&copy;Saurabh Wankhade</p>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, 
+      });
+    </script>
 
 </body>
 </html>
