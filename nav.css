@@ -31,6 +31,7 @@ html{
 }
 nav{
     background-color: #0c1c017a;
+    height: 15%;
 }
 
 nav img{
@@ -223,51 +224,41 @@ nav ul li a:hover,nav ul li a:focus{
 
 
 .question{
+      display: flex;
+      flex-direction: column;
+      background-image: url(imgs/questionbg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 100px;
+      height: 600px;
+      object-fit: contain;
+      background-position:center center;
+}
+
+.header_data .data h1{
+    font-size: 40px;
+}
+
+.header_data .data p{
+    font-size: 20px;
     text-align: center;
-    background-image: url(imgs/questionbg.jpg);
-    margin-top: 100px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: contain;
-    height: 600px;
-
-    /* To center
-    */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.question span{
-    border: 1px solid #536942;
-    border-radius: 20px;
+.header_data .data span{
+    color: wheat;
+    background-color: #316e03b8;
+    cursor: pointer;
     padding: 10px;
-    margin-top: 60px;
-    margin-bottom: 100px;
-    color: wheat;
-    background-color: #536942c5;
-    cursor: pointer;
-}
-
-.question span:hover{
-    color: wheat;
-    background-color: #536942;
-    border: #53694279;
-    cursor: pointer;
     border-radius: 20px;
+    font-size: 20px;
+    font-style:oblique;
 }
 
-.question h2{
-    font-size: 26px;
-    padding: 100px 0 40px 0;
+
+.header_data .data span:hover{
+    background-color: #316e03fe;
 }
 
-.question h5{
-    /* width: 400px; */
-    color: #0c1c01;
-    font-size: 18px;
-}
 
 
 
@@ -290,17 +281,18 @@ nav ul li a:hover,nav ul li a:focus{
         text-align: center;
         font-size: 18px;
         padding: 20px;
-        left: -100%;
+        left: 100%;
         width: 100%;
         display: block;
-        background-color: #aededa26;
+        top: 15px;
+        background-color: #0c1c013a;
         transition: all 0.3s ease;
     }
     ul{
         margin-top: 90px;
     }
     nav ul li a{
-        color: rgb(15, 14, 14);
+        color: white;
         text-decoration: none;
         padding: 10px;
     }
