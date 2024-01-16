@@ -14,6 +14,7 @@
 }
 body{
     font-family: 'Noto Sans', sans-serif;
+    width: 100%;
 }
 html{
     scroll-behavior: smooth;
@@ -27,6 +28,7 @@ html{
       background-size: cover;
       height: 700px;
       object-fit: contain;
+      width: 100%;
       background-position:center center;
 }
 nav{
@@ -261,10 +263,22 @@ nav ul li a:hover,nav ul li a:focus{
 
 
 
+@media (max-width: 768px) {
+    [data-aos="fade-left"], [data-aos="fade-right"] {
+      transform: translateY(100%);
+    }
+
+    [data-aos="fade-left"].aos-animate, [data-aos="fade-right"].aos-animate {
+      transform: translateY(0);
+    }
+  }
 
 
 @media (max-width: 1000px) {
-    
+
+    .fornt{
+        width: 100%;
+    }
     
     .header_data .data h1{
         font-size: 40px;
